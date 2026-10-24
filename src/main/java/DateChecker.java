@@ -16,6 +16,11 @@ public class DateChecker {
 
     // These are the months with 31 days in them: Jan, Mar, May, Jul, Aug, Oct, Dec
     private DateChecker.Month[] monthThirtyOneDays = {Month.JANUARY, Month.MARCH, Month.MAY,
-                                                        Month.JULY, Month.AUGUST, Month.OCTOBER,
-                                                        Month.DECEMBER};
+            Month.JULY, Month.AUGUST, Month.OCTOBER,
+            Month.DECEMBER};
+
+    public boolean has31Days(Month month) {
+        return false;
+    }
+
 }
