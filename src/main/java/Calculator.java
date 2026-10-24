@@ -18,7 +18,7 @@ public class Calculator {
     public int divide(int x, int y) {
 
         if (y == 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Ints CANNOT be divided by 0");
         }
 
         return x / y;
