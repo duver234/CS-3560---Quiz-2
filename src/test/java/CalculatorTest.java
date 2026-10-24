@@ -61,6 +61,8 @@ public class CalculatorTest {
     @Test
     public void testisEven() {
         assertEquals(true, calculator.isEven(4));
+
+        assertEquals(false, calculator.isEven(3));
     }
 
 }
