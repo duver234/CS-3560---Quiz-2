@@ -26,7 +26,7 @@ public class DateChecker {
 
 
     public boolean has31Days(Month month) {
-        if (month == null || !Arrays.asList(monthThirtyOneDays).contains(month)) {
+        if (month == null || !Arrays.asList(Month.values()).contains(month)) {
             throw new IllegalArgumentException("Please enter valid month input.");
         }
 
