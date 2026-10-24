@@ -54,20 +54,21 @@ public class CalculatorTest {
 
     @Test
     public void testDivide() {
-        // Test with 0
-        assertThrows(
-                ArithmeticException.class,
-                () -> calculator.divide(10, 0)
-        );
-
         assertEquals(2, calculator.divide(4, 2));
     }
 
     @Test
     public void testisEven() {
         assertTrue(calculator.isEven(4));
+    }
 
+    @Test
+    public void testisFalse() {
         assertFalse(calculator.isEven(3));
     }
 
+    @Test
+    public void testDivideByZero() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
+    }
 }
