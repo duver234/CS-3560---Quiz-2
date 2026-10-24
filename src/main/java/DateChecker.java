@@ -24,6 +24,10 @@ public class DateChecker {
     //February will be returning false
 
     public boolean has31Days(Month month) {
+        if (month == null || !Arrays.asList(monthThirtyOneDays).contains(month)) {
+            throw new IllegalArgumentException("Please enter valid month input.");
+        }
+
         if (Arrays.asList(monthThirtyOneDays).contains(month)) {
             return true;
         }
